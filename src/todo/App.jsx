@@ -12,7 +12,7 @@ export function App() {
 
     return (
         <>
-            <Header dispatch={dispatch} heading={"Hello"} />
+            <Header dispatch={dispatch} heading={"todos"} />
             <Main todos={todos} dispatch={dispatch} />
             <Footer todos={todos} dispatch={dispatch} />
         </>
