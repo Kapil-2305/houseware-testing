@@ -8,7 +8,7 @@ export function Header({ dispatch, heading }) {
 
     return (
         <header className="header" data-testid="header">
-            <h1>{heading}</h1>
+            <h1 title="Todos Heading" data-testid="header-1">{heading}</h1>
             <Input onSubmit={addItem} label="New Todo Input" placeholder="What needs to be done?" />
         </header>
     );
