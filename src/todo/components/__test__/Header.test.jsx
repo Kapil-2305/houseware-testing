@@ -36,14 +36,14 @@ it('should render same text passed into title prop', async ()=>{
 });
 
 // 3 -> using queryBy attributes
-it('should render same text passed into title prop', async ()=>{
+it('should not render same text passed into title prop', async ()=>{
     render(<Header heading="Todos" />);
     const headingElement = screen.queryByText(/dogs/i);
     expect(headingElement).not.toBeInTheDocument();
 });
 
 // 4 -> using getAllBy attributes
-it('should render same text passed into title prop', async ()=>{
+it('should render all heading tags', async ()=>{
     render(<Header heading="Todos" />);
     const headingElements = screen.getAllByRole("heading");
     expect(headingElements.length).toBe(1);
